@@ -10,3 +10,7 @@ body {
     margin: auto;
     text-align: center;
 }
+
+#today::first-letter {
+    text-transform: capitalize;
+}

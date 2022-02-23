@@ -7,8 +7,8 @@ const temp = document.getElementById('temp');
 let currentLoc = document.getElementById('current');
 let icon = document.getElementById('icon');
 const fheit = document.getElementById('fheit').addEventListener('click', selectFheit)
-
 const celsius = document.getElementById('celsius').addEventListener('click', selectCelsius)
+
 currentLoc.textContent = 'Winston-Salem';
 
 fetch('http://api.openweathermap.org/data/2.5/weather?q=Winston-Salem&units=imperial&APPID=ae3fc543a832cd1f3a7693a65cdb8c34', {mode: 'cors'})
