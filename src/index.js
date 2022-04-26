@@ -1,3 +1,5 @@
+import './style.css';
+
 const submit = document.getElementById('submit');
 submit.addEventListener('click', changeLocation);
 const today = document.getElementById('today');
