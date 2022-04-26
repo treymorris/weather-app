@@ -1,6 +1,6 @@
 import './style.css';
 
-const submit = document.getElementById('submit');
+const submit = document.getElementById('button-addon2');
 submit.addEventListener('click', changeLocation);
 const today = document.getElementById('today');
 const feelsLike = document.getElementById('feels-like');

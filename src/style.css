@@ -14,12 +14,17 @@ body {
 }
 
 .container {
-    width: 850px;
+    width: 550px;
     margin: auto;
     text-align: center;
     font-family: 'MyFont';
+    color: aliceblue;
 }
 
-#today::first-letter {
+h1::first-letter {
     text-transform: capitalize;
+}
+
+h6 {
+    color: black;
 }
