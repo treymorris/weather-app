@@ -1,23 +1,21 @@
-
-
 body {
-    background-image: url("./barometer.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  background-image: url("./barometer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .container {
-    width: 550px;
-    margin: auto;
-    text-align: center;
-    color: aliceblue;
+  width: 550px;
+  margin: auto;
+  text-align: center;
+  color: aliceblue;
 }
 
 h1::first-letter {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 h6 {
-    color: black;
+  color: black;
 }

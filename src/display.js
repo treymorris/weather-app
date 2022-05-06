@@ -2,6 +2,7 @@ const display = (() => {
   function setData(data) {
     if (!data) return;
     console.log(data);
+
     const currentLoc = document.getElementById("current");
     const today = document.getElementById("today");
     const feelsLike = document.getElementById("feels-like");
