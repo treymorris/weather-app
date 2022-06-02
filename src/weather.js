@@ -6,7 +6,7 @@ const weather = (() => {
       feelsLike: data.main.feels_like,
       humidity: data.main.humidity,
       today: data.weather[0].description,
-      icon: `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`,
+      icon: `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`,
     };
 
     return { ...newData };
@@ -14,7 +14,7 @@ const weather = (() => {
 
   async function getData(city, scale) {
     const response = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=${scale}&APPID=ae3fc543a832cd1f3a7693a65cdb8c34`,
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${scale}&APPID=ae3fc543a832cd1f3a7693a65cdb8c34`,
       { mode: "cors" }
     );
     try {
