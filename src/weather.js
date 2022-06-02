@@ -6,7 +6,7 @@ const weather = (() => {
       feelsLike: data.main.feels_like,
       humidity: data.main.humidity,
       today: data.weather[0].description,
-      icon: `https://cors-anywhere.herokuapp.com/http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`,
+      icon: `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`,
     };
 
     return { ...newData };
