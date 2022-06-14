@@ -4,7 +4,13 @@ import weather from "./weather";
 
 const cityInput = document.getElementById("location");
 
-document.getElementById("button-addon2").addEventListener("click", async () => {
+document.getElementById("searchButton").addEventListener("click", async () => {
+  if (cityInput.value === "") return;
+  const weatherData = await weather.getData(cityInput.value, "imperial");
+  display.setData(weatherData);
+});
+
+document.getElementById("searchButton").addEventListener("keydown", async () => {
   if (cityInput.value === "") return;
   const weatherData = await weather.getData(cityInput.value, "imperial");
   display.setData(weatherData);

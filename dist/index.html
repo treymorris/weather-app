@@ -10,7 +10,7 @@
 </head>
 <body >
     <div class="container" id="container">
-        <div class="input-group mb-5 mt-5">
+        <div class="input-group mb-5 mt-5 mx-auto w-50">
             <input 
                 type="text" 
                 class="form-control" 
@@ -19,37 +19,55 @@
                 aria-label="Recipient's username" 
                 aria-describedby="button-addon2"
                 required>
-            <button 
-                class="btn btn-secondary" 
-                type="button" 
-                id="button-addon2">
-            Search
-            </button>
+            <div class="ms-3" >
+                <button
+                    class="btn btn-secondary"
+                    type="button"
+                    id="searchButton">
+                Search
+                </button>
+            </div>
         </div>
-        <h6 >Current Location</h6>
-        <h1 class="mb-4" id="current"></h1>
-        <h6>Today's Weather</h2>
-        <h1 id="today"></h1>
-        <img class="mb-3" id="icon" src="#">
-        <h6>Current Temp</h6>
-        <h1 id="temp"></h1>
-        <h6>Feels Like</h6>
-        <h1 id="feels-like"></h1>
-        <h6>Humidity</h6>
-        <h1 id="humidity"></h1>
-        <h6>Change Temp</h6>
-        <button 
-            class="btn btn-secondary btn-small" 
-            type="button" 
-            id="fBtn">
-        F
-        </button>
-        <button 
-            class="btn btn-secondary btn-small" 
-            type="button" 
-            id="cBtn">
-        C
-        </button>
+        <div >
+            <div class="container">
+                <h6 class="text-center">Current Location</h6>
+                <h1 class="mb-1 text-center" id="current"></h1>
+            </div>
+            <div class="container card mb-4 w-25">
+                <h6 class="text-center text-light p-4">Today's Weather</h2>
+                <h1 id="today" class="text-center"></h1>
+                <div class="container d-flex justify-content-center"><img id="icon" src="#"></div>
+            </div>
+            <div class="container">
+                <h6 class="text-center">Current Temp</h6>
+                <h1 id="temp" class="text-center mb-5"></h1>
+            </div>
+            <div class="container">
+                <h6 class="text-center">Feels Like</h6>
+                <h1 class="text-center mb-5" id="feels-like"></h1>
+            </div>
+            <div class="container">
+                <h6 class="text-center">Humidity</h6>
+                <h1 id="humidity" class="text-center mb-5"></h1>
+            </div>
+            <div class="container">
+                <h6 class="text-center mb-3">Change Temp</h6>
+            </div>
+            <div class="container d-flex justify-content-center ">
+                <button
+                    class="btn btn-secondary btn-small me-1"
+                    type="button"
+                    id="fBtn">
+                F
+                </button>
+                <button
+                    class="btn btn-secondary btn-small ms-1"
+                    type="button"
+                    id="cBtn">
+                C
+                </button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
